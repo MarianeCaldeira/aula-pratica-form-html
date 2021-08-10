@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style type="text/css">
+        form {
+        margin: 0 auto;
+        width: 650px;
+        padding: 1em;
+        border: 2px solid rgb(12, 12, 12);
+    }
+    form div + div {
+        margin-top: 1em;
+    }
+    input:focus, textarea:focus {
+        border-color: #000;
+    }
+    textarea {
+        vertical-align: top;
+        height: 5em;
+        resize: vertical;
+    }
+    .button {
+        padding-left: 100px;
+    }
+    button {
+        margin-left: .10em;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <form action="formularios">
+    <h5>Manutenção do Orgão Colegiado</h5>
+    <table border="1">
+    <tr>
+        <th bgcolor="LightSteelBlue">Unidade</th>
+        <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+    </tr>
+    <tr>
+        <th bgcolor="LightSteelBlue">Tipo Colegiado</th>
+        <td>CONGREGAÇÃO</td>
+    </tr>
+    </table>
+    <br><br>
+    <table>
+        <tr>
+        <td bgcolor="LightSteelBlue" colspan="2"><b>Orgão Colegiado</b></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="nome"><b>Nome:</b></label>
+            <input type="text" id="nome" name="nome" value="CONGREGAÇÃO ILHA SOLTEIRA"></td>
+        </tr>
+        <tr>
+            <td><label for="sigla"><b>Sigla:</b></label>
+            <input type="text" id="sigla" name="sigla" value="CFIS"></td>
+            <td><label for="status"><b>Status:</b></label>
+            <select name="status" id="status">
+                <option value="ativado">ATIVADO</option>
+                <option value="desativado">DESATIVADO</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="data de ativação"><b>Data Ativação:</b></label>
+            <input type="text" id="data de ativação" name="data de ativação" value="15/10/2000"></td>
+            <td><label for="data de dasativação"><b>Data Desativação:</b></label>
+            <input type="text" id="data de desativação" name="data de desativação"></td>
+        </tr>
+        <tr>
+            <td><label for="orgão de origem"><b>Orgão de Origem:</b></label>
+            <input type="text" id="orgão de origem" name="orgão de origem">
+            <input type="button" value="Buscar"></td>
+        </tr>
+        <tr>   
+            <td><label for="orgão superior"><b>Orgão Superior:</b></label>
+            <input type="text" id="orgão superior" name="orgão superior">
+            <input type="button" value="Buscar"></td>
+        </tr>
+        <tr>
+            <td><label for="Documentação"><b>Documentação</b></label>
+            <textarea name="Documentação" id="Documentação" cols="50" rows="100"></textarea></td>
+        </tr>
+        <tr>
+        <td><input type="submit" value="Salvar"></td>
+        <td><input type="submit" value="Excluir"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
